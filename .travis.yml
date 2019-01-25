@@ -1,0 +1,7 @@
+language: minimal
+os: osx
+
+install: ./install-dependencies.sh
+
+script: ./run-tests.sh
+
