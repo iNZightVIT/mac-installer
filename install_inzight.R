@@ -23,7 +23,7 @@ local({
   )
 })
 
-install.packages(c('RGtk2', 'cairoDevice', 'rattle'))
+dir.create('iNZightVIT/library', recursive = TRUE)
 
 utils::install.packages(
     c(
@@ -35,5 +35,6 @@ utils::install.packages(
         'iNZightRegression',
         'iNZightTools',
         'vit'
-    )
+    ),
+    lib = 'iNZightVIT/library'
 )
