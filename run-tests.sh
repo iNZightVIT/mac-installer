@@ -6,4 +6,6 @@ if [ ! -d /Library/Frameworks/GTK.framework  ]; then exit 1; fi
 
 if [ ! -f test.txt ]; then exit 1; fi
 
+## finally, build the installer - if this is successful, then we have won! 
+
 exit 0
