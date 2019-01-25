@@ -1,6 +1,5 @@
 language: minimal
 os: osx
-sudo: true
 
 install: ./install-dependencies.sh
 
