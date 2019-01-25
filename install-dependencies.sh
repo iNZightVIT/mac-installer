@@ -23,3 +23,6 @@ sudo installer -pkg clang.pkg -target / -allowUntrusted
 curl -L http://cran.stat.auckland.ac.nz/bin/macosx/tools/gfortran-6.1.pkg -o gfortran.pkg
 sudo installer -pkg gfortran.pkg -target / -allowUntrusted
 
+## RGtk2 needs to be installed ... 
+curl -L https://cran.r-project.org/src/contrib/RGtk2_2.20.35.tar.gz
+R CMD INSTALL RGtk2_2.20.35.tar.gz
