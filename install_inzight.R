@@ -5,8 +5,6 @@ options(
     )
 )
 
-system('brew install gtk+')
-
 local({
   if (Sys.info()[['sysname']] != 'Darwin') return()
 

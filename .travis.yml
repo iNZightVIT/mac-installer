@@ -5,3 +5,6 @@ install: ./install-dependencies.sh
 
 script: ./run-tests.sh
 
+addons:
+  homebrew:
+    packages: gtk+
