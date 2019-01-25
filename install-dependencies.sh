@@ -12,7 +12,7 @@ curl -L https://dl.bintray.com/xquartz/downloads/XQuartz-$XQUARTZ_VERSION.dmg -o
 hdiutil attach xquartz.dmg
 sudo installer -pkg /Volumes/XQuartz-$XQUARTZ_VERSION/XQuartz.pkg -target / -allowUntrusted
 
-
 # install r
+curl -L http://cran.stat.auckland.ac.nz/bin/macosx/el-capitan/base/R-$R_VERSION.pkg -o r.pkg
+sudo installer -pkg r.pkg -target / -allowUntrusted
 
-echo "test" >> test.txt
