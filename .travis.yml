@@ -1,10 +1,12 @@
 language: minimal
 os: osx
 
+addons:
+  homebrew:
+    packages: gtk+
+
 install: ./install-dependencies.sh
 
 script: ./run-tests.sh
 
-addons:
-  homebrew:
-    packages: gtk+
+build: ./build-app.sh

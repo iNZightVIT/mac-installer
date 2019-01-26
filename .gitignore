@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/macos,r,sublimetext,osx
 # Edit at https://www.gitignore.io/?templates=macos,r,sublimetext,osx
 
+iNZightVIT
+
 ### macOS ###
 # General
 .DS_Store

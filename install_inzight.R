@@ -1,10 +1,3 @@
-options(
-    repos = c(
-        'https://r.docker.stat.auckland.ac.nz', 
-        'https://cran.rstudio.com'
-    )
-)
-
 local({
   if (Sys.info()[['sysname']] != 'Darwin') return()
 
@@ -23,7 +16,7 @@ local({
   )
 })
 
-dir.create('iNZightVIT/library', recursive = TRUE)
+dir.create('iNZightVIT/.library', recursive = TRUE)
 
 utils::install.packages(
     c(
@@ -36,5 +29,5 @@ utils::install.packages(
         'iNZightTools',
         'vit'
     ),
-    lib = 'iNZightVIT/library'
+    lib = 'iNZightVIT/.library'
 )
