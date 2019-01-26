@@ -1,11 +1,11 @@
 #!/bin/bash
 set -ev
 
-APP=iNZightVIT.app
-INZ=$APP/iNZight/Contents
-VIT=$APP/VIT/Contents
-UPD=$APP/Update/Contents
-UNI=$APP/Uninstall/Contents
+APP=iNZightVIT
+INZ=$APP/iNZight.app/Contents
+VIT=$APP/VIT.app/Contents
+UPD=$APP/Update.app/Contents
+UNI=$APP/Uninstall.app/Contents
 
 ## scaffold app
 mkdir -p $INZ/{MacOS,Resources}
