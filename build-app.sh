@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ev
 
 APP=iNZightVIT
 INZ=$APP/iNZight/Contents
