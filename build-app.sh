@@ -8,10 +8,10 @@ UPD=$APP/Update/Contents
 UNI=$APP/Uninstall/Contents
 
 ## scaffold app
-mkdir -p iNZightVIT/iNZight/Contents/{MacOS,Resources}
-mkdir -p iNZightVIT/VIT/Contents/{MacOS,Resources}
-mkdir -p iNZightVIT/Update/Contents/{MacOS,Resources}
-mkdir -p iNZightVIT/Uninstall/Contents/{MacOS,Resources}
+mkdir -p $INZ/{MacOS,Resources}
+mkdir -p $VIT/{MacOS,Resources}
+mkdir -p $UPD/{MacOS,Resources}
+mkdir -p $UNI/{MacOS,Resources}
 
 ## add icons
 cp icons/inzight.icns $INZ/Resources/
@@ -30,4 +30,6 @@ chmod +x $UPD/MacOS/Update
 ## uninstall is different
 
 
-ls -alR iNZightVIT
+## add .Rprofile script
+cp run_inzight.R $APP/.Rprofile
+
