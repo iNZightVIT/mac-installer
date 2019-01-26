@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ev
 
-APP=iNZightVIT
+APP=iNZightVIT.app
 INZ=$APP/iNZight/Contents
 VIT=$APP/VIT/Contents
 UPD=$APP/Update/Contents
@@ -33,3 +33,20 @@ chmod +x $UPD/MacOS/Update
 ## add .Rprofile script
 cp run_inzight.R $APP/.Rprofile
 
+mkdir build
+mv $APP build
+
+## create DMG
+create-dmg \
+    --volname "iNZightVIT Installer" \
+    --volicon "icons/inzight.icns" \
+    --window-pos 200 120 \
+    --window-size 800 400 \
+    --icon-size 100 \
+    --icon "$APP" 200 190 \
+    --hide-extension "$APP" \
+    --app-drop-link 600 185 \
+    "iNZightVIT_mac.dmg" \
+    "build/"
+
+ls -al

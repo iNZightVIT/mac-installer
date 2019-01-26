@@ -3,7 +3,9 @@ os: osx
 
 addons:
   homebrew:
-    packages: gtk+
+    packages: 
+      - gtk+
+      - create-dmg
 
 install: ./install-dependencies.sh
 
