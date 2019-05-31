@@ -4,7 +4,6 @@ os: osx
 addons:
   homebrew:
     packages: 
-    - gtk+
     - create-dmg
     update: true
 

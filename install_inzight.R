@@ -7,9 +7,8 @@ local({
   lockBinding('.Platform', baseenv())
 
   options(
-    pkgType = 'both', install.packages.compile.from.source = 'always',
+    pkgType = 'binary',
     repos = c(
-        'https://macos.rbind.org',
         'https://r.docker.stat.auckland.ac.nz', 
         'https://cran.rstudio.com'
     )
@@ -17,6 +16,10 @@ local({
 })
 
 dir.create('iNZightVIT/.library', recursive = TRUE)
+
+# install gWidgets2RGtk2 from github (not on CRAN, yet)
+utils::install.packages("devtools")
+devtools::install_github("jverzani/gWidgets2RGtk2")
 
 utils::install.packages(
     c(
