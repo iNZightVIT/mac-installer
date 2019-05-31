@@ -7,7 +7,7 @@ local({
   lockBinding('.Platform', baseenv())
 
   options(
-    pkgType = 'binary', install.packages.compile.from.source = 'always',
+    pkgType = 'both', install.packages.compile.from.source = 'always',
     repos = c(
         'https://r.docker.stat.auckland.ac.nz', 
         'https://cran.rstudio.com'
